@@ -10,7 +10,7 @@ import org.slf4j.LoggerFactory;
 
 public class SearchWriteInFile extends SearchColumn {
 
-	private final static Logger LOGGER = LoggerFactory.getLogger(SearchWriteInFile.class);
+	private static Logger LOGGER = LoggerFactory.getLogger(SearchWriteInFile.class);
 
 	@Override
 	public void writeTXT(String file, String searchString, String pathSave) {
@@ -45,7 +45,7 @@ public class SearchWriteInFile extends SearchColumn {
 				}
 				i++;
 			}
-			System.out.println("\n Succes find!");
+			System.out.println("\n Successfully found!");
 			writerTXT.write(sbTXT.toString());
 			writerTXT.close();
 		} else {
@@ -89,11 +89,11 @@ public class SearchWriteInFile extends SearchColumn {
 				sbCSV.append("\n");
 				System.out.println();
 			}
-			System.out.println("\n Succes find!");
+			System.out.println("\n Successfully found!");
 			writerCSV.write(sbCSV.toString());
 			writerCSV.close();
 		} else {
-			System.out.println("Not find column with word: " + searchString);
+			System.out.println("Not found column with word: " + searchString);
 		}
 	}
 }

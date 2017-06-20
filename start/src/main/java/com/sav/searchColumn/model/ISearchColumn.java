@@ -1,10 +1,8 @@
 package com.sav.searchColumn.model;
 
-import java.io.FileNotFoundException;
-
 public interface ISearchColumn {
 
-	String[][] readFileCSV(String file) throws FileNotFoundException, Exception;
+	String[][] readFileCSV(String file);
 	
 	void writeTXT(String file, String searchString, String pathSave);
 	
