@@ -5,13 +5,14 @@
 ```sh
 mvn clean compile assembly:single
 ```
-В папке ["Test files"](https://github.com/AlexeiStrug/Search-column-in-file/tree/master/Test%20files) лежит файл через который тестировалось приложение.
 
 #### Пример запуска:
 ```sh
 для вывода в txt файл: java -jar start.jar -l c:\\1.csv -q one -o d:\\result.txt
 для вывода в csv файл: java -jar start.jar -l c:\\1.csv -q one -o d:\\result.csv
 ```
+В папке ["Test files"](https://github.com/AlexeiStrug/Search-column-in-file/tree/master/Test%20files) лежит файл через который тестировалось приложение.
+
 # Тестовое задание Java
 Готовое задание должно быть доступно на GitHub. В [Readme.md](https://github.com/AlexeiStrug/Search-column-in-file/blob/master/README.md) файле опишите, как запустить вашу программу.
 Программы должны быть написаны на Java 8. Для сборки использовать Maven.
